@@ -1,0 +1,234 @@
+body {
+  background-color: #E3E3E3;
+  font-family: 'Shojumaru';
+}
+
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+
+}
+header img{
+  width: 240px;
+}
+
+img{
+  width: 280px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+
+h2
+{
+  margin: 1.3rem;
+  font-size: 1.7rem;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+header li {
+  margin: 3rem;
+}
+
+header a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#Accueil div {
+  display: block;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+#Histoire {
+  background-color: black;
+  padding :0.5rem;
+  color :#ffffff;
+}
+
+#Regle div {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+div{
+  display: flex;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+}
+
+p{
+  display: block;
+  padding : 1rem;
+  margin: 1rem;
+}
+
+#Autre {
+  background-color: black;
+  padding :0.5rem;
+  color :#ffffff;
+}
+
+#Grille{
+  background-color: black;
+  padding :0.5rem;
+  color :#ffffff;
+}
+
+#Grille img{
+  display :flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Grille nav > ul {
+    display: flex;
+    text-align: center;
+  }
+
+  #Grille  nav ul {
+    list-style-type: none;
+
+  }
+
+  #Grille  nav > ul > li {
+    background-color: black;
+    height: 100%;
+    flex: 1;
+
+  }
+
+#Grille nav > ul > li > button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ #Grille li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+#enligne img {
+  width: 80px;
+  float: right;
+}
+
+#enligne div{
+  display: block;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+footer{
+  background-color: #ffffff;
+  width: 100%;
+  padding :0.3rem;
+}
+
+footer p {
+  text-align: center;
+  margin: 1px;
+  padding: 6px;
+}
+
+/*Selecteur de classe --> . */
+.menu {
+  height: 60px;
+  list-style: none; /*petit truc devant la liste genre tiret point etc*/
+  padding: 10px; /*espace autour du txt*/
+  margin: 40px;
+}
+
+.menu li { /* list de class "menu"*/
+  float: left; /* pour les aligner de gauche à droite*/
+  width: 596px;
+}
+
+.menu li a:link, .menu li a:visited {
+  display: block;
+  color: #ffffff;
+  background: gray;
+  padding: 6px 10px;
+  border: 1px solid #ffffff; /*espace entre bloc et couleur= blanc*/
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.menu .sousmenu {
+  list-style-type: none;
+  display: none; /* pour qu'il soit pas visible si on passe pas sur le parent*/
+  padding: 0;
+  margin: 0;
+  position: absolute; /* pour qui rete immobile */
+}
+
+
+.menu .sousmenu li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li:hover .sousmenu { /* pour qu'ils s'affichent quand on passe avec la souris*/
+  display: block;
+}
+
+a.button{
+  display:block;
+  color:#ffffff;
+  background-color: gray;
+  text-decoration:none;
+  border: 1px solid #ffffff;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+}
+
+@media all and (max-width: 600px) {
+
+body{
+    flex-direction: column
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: row ;
+    list-style-type: none;}
+
+}
+h1 {
+    font-size: 36px;
+  }
+header {
+    flex-direction: column;
+  }
+div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
